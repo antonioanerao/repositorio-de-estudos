@@ -167,7 +167,7 @@ class Documentation
     public static function getDocVersions()
     {
         return [
-            '1.x' => '1.x',
+            'mpac' => 'mpac',
         ];
     }
 }
