@@ -1,0 +1,37 @@
+version: "3.3"
+services:
+
+  traefik:
+    image: "traefik"
+    container_name: "traefik"
+    restart: always
+    command:
+      - "--log.level=DEBUG"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "80:80"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    networks:
+      - proxy
+
+  app-name:
+    container_name: app-name
+    image: antonioanerao/laravel:latest
+    restart: always
+    networks:
+      - proxy
+    volumes:
+      - ./laravel/:/laravel
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=proxy"
+      - "traefik.http.routers.app-name.rule=Host(`app.docker.localhost`)"
+      - "traefik.http.routers.app-name.entrypoints=web"
+
+networks:
+  proxy:
+    external: true
