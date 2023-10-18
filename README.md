@@ -1,4 +1,7 @@
-### Aplicação para salvar anotações de estudos
+### Aplicação para salvar anotações dos meus estudos
+
+> **Note**
+> Este repositório usa o site da documentação do [Laravel](https://github.com/laravel/laravel.com), com uma página inicial limpa e pequenos ajustes no layout
 
 ![Screenshot](screenshot.png)
 
@@ -45,31 +48,31 @@
 #### Crie uma nova rede do docker chamada proxy
     $ docker network create proxy
 
-#### Faça uma cópia do dev.example.yml com o nome dev.yml
-    $ cp dev.example.yml dev.yml
+#### Faça uma cópia do docker-compose.example.yml com o nome docker-compose.yml
+    $ cp docker-compose.example.yml docker-compose.yml
 
-#### Use a stack dev.yml para iniciar um traefik como proxy reverso, um webserver e um sql server
-    $ docker-compose -f dev.yml up -d
+#### Use a stack docker-compose.yml para iniciar um traefik como proxy reverso e um webserver
+    $ docker-compose -d
+
+#### Faça um cópia do .env.example com o nome .env e edite-o conforme suas necessidades. Não esqueça de inserir seu API TOKEN do TORCHLIGHT
+    $ cp .env.example .env
 
 #### Acesse o container do webserver
-    $ docker exec -it app-estudo
+    $ docker exec -it app-estudo /bin/bash
 
-#### Faça uma cópia do arquivo .env.example com o nome .env e gere uma nova chave da aplicação 
-    # cp .env.example .env
+#### Gere uma nova chave da aplicação 
     # php artisan key:generate
 
 #### Instale as dependências do composer e npm
     # composer install
     # npm install
 
-#### Faça o ajuste nas permissões de algumas pastas
-    # chgrp -R www-data storage bootstrap/cache
-    # chmod -R ug+rwx storage bootstrap/cache
-
-#### Edite o arquivo .env com as informações do seu banco de dados
-
 #### Saia do container
     # exit
+
+#### Faça o ajuste nas permissões de algumas pastas (você deve estar na pasta do projeto)
+    # chgrp -R www-data storage bootstrap/cache
+    # chmod -R ug+rwx storage bootstrap/cache
 
 #### Deixe rodando o _npm run dev_ no seu container
     $ docker exec -itd app-estudo npm run dev
