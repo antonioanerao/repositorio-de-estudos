@@ -45,12 +45,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    @production
-        <!-- Fathom - beautiful, simple website analytics -->
-        <script src="https://cdn.usefathom.com/script.js" data-site="DVMEKBYF" defer></script>
-        <!-- / Fathom -->
-    @endproduction
-
     @php
         $routesThatAreAlwaysLightMode = collect([
             'frontend',
@@ -83,10 +77,6 @@
     var algolia_search_key = '{{ config('algolia.connections.main.search_key', false) }}';
     var version = '{{ isset($currentVersion) ? $currentVersion : DEFAULT_VERSION }}';
 </script>
-
-<div class="fixed">
-    <input type="text">
-</div>
 
 </body>
 </html>

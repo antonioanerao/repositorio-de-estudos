@@ -10,79 +10,79 @@
         <div class="max-w-screen-xl mx-auto px-5 flex items-center justify-between">
             <div class="flex-1">
                 <a href="/" class="inline-flex items-center">
-                    <h5 class="font-bold">
+                    <h5 class="font-bold md:text-gray-700 lg:dark:text-white">
                         {{ config('app.name') }}
                     </h5>
                 </a>
             </div>
-            <ul class="relative hidden lg:flex lg:items-center lg:justify-center lg:gap-6 xl:gap-10">
-                <li><a href="#">Menu 01</a></li>
-                <li x-data="{ expanded: false }" class="relative" @keydown.window.escape="expanded = false">
-                    <button class="flex items-center justify-center" @click="expanded = !expanded">
-                        Mega Menu
-                        <span class="ml-3 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" :class="{ 'rotate-180': expanded }" class="h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                        </span>
-                    </button>
-                    <div
-                        x-show="expanded"
-                        x-cloak
-                        class="absolute left-28 z-20 transition transform -translate-x-1/2"
-                        x-transition:enter="duration-250 ease-out"
-                        x-transition:enter-start="opacity-0 -translate-y-8"
-                        x-transition:enter-end="opacity-100"
-                        x-transition:leave="duration-250 ease-in"
-                        x-transition:leave-start="opacity-100"
-                        x-transition:leave-end="opacity-0 -translate-y-8"
-                    >
-                        <div
-                            class="mt-4 w-224 p-8 bg-white shadow-lg transform transition-transform origin-top"
-                            @click.away="expanded = false"
-                        >
-                            <ul class="grid gap-6 relative sm:grid-cols-2 md:grid-cols-3">
-                                <li>
-                                    <a href="/docs/{{DEFAULT_VERSION}}/starter-kits#laravel-breeze" class="flex">
-                                        <div class="relative shrink-0 w-12 h-12 bg-breeze flex items-center justify-center rounded-lg overflow-hidden">
-                                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/breeze.min.svg" alt="Icon" class="w-7 h-7" width="47" height="32">
-                                        </div>
-                                        <div class="ml-4 leading-5">
-                                            <div class="text-gray-900">Item 1</div>
-                                            <span class="text-gray-700 text-xs">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/docs/{{DEFAULT_VERSION}}/starter-kits#laravel-breeze" class="flex">
-                                        <div class="relative shrink-0 w-12 h-12 bg-breeze flex items-center justify-center rounded-lg overflow-hidden">
-                                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/breeze.min.svg" alt="Icon" class="w-7 h-7" width="47" height="32">
-                                        </div>
-                                        <div class="ml-4 leading-5">
-                                            <div class="text-gray-900">Item 2</div>
-                                            <span class="text-gray-700 text-xs">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/docs/{{DEFAULT_VERSION}}/starter-kits#laravel-breeze" class="flex">
-                                        <div class="relative shrink-0 w-12 h-12 bg-breeze flex items-center justify-center rounded-lg overflow-hidden">
-                                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                                            <img src="/img/ecosystem/breeze.min.svg" alt="Icon" class="w-7 h-7" width="47" height="32">
-                                        </div>
-                                        <div class="ml-4 leading-5">
-                                            <div class="text-gray-900">Item 3</div>
-                                            <span class="text-gray-700 text-xs">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
+            <ul class="relative hidden dark:text-white lg:flex lg:items-center lg:justify-center lg:gap-6 xl:gap-10">
+                {{-- <li><a href="#">Menu 01</a></li> --}}
+                {{-- <li x-data="{ expanded: false }" class="relative" @keydown.window.escape="expanded = false"> --}}
+                {{--     <button class="flex items-center justify-center" @click="expanded = !expanded"> --}}
+                {{--         Mega Menu --}}
+                {{--         <span class="ml-3 shrink-0"> --}}
+                {{--             <svg xmlns="http://www.w3.org/2000/svg" :class="{ 'rotate-180': expanded }" class="h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg> --}}
+                {{--         </span> --}}
+                {{--     </button> --}}
+                {{--     <div --}}
+                {{--         x-show="expanded" --}}
+                {{--         x-cloak --}}
+                {{--         class="absolute left-28 z-20 transition transform -translate-x-1/2" --}}
+                {{--         x-transition:enter="duration-250 ease-out" --}}
+                {{--         x-transition:enter-start="opacity-0 -translate-y-8" --}}
+                {{--         x-transition:enter-end="opacity-100" --}}
+                {{--         x-transition:leave="duration-250 ease-in" --}}
+                {{--         x-transition:leave-start="opacity-100" --}}
+                {{--         x-transition:leave-end="opacity-0 -translate-y-8" --}}
+                {{--     > --}}
+                {{--         <div --}}
+                {{--             class="mt-4 w-224 p-8 bg-white shadow-lg transform transition-transform origin-top" --}}
+                {{--             @click.away="expanded = false" --}}
+                {{--         > --}}
+                {{--             <ul class="grid gap-6 relative sm:grid-cols-2 md:grid-cols-3"> --}}
+                {{--                 <li> --}}
+                {{--                     <a href="/docs/{{DEFAULT_VERSION}}/starter-kits#laravel-breeze" class="flex"> --}}
+                {{--                         <div class="relative shrink-0 w-12 h-12 bg-breeze flex items-center justify-center rounded-lg overflow-hidden"> --}}
+                {{--                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span> --}}
+                {{--                             <img src="/img/ecosystem/breeze.min.svg" alt="Icon" class="w-7 h-7" width="47" height="32"> --}}
+                {{--                         </div> --}}
+                {{--                         <div class="ml-4 leading-5"> --}}
+                {{--                             <div class="text-gray-900">Item 1</div> --}}
+                {{--                             <span class="text-gray-700 text-xs">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </span> --}}
+                {{--                         </div> --}}
+                {{--                     </a> --}}
+                {{--                 </li> --}}
+                {{--                 <li> --}}
+                {{--                     <a href="/docs/{{DEFAULT_VERSION}}/starter-kits#laravel-breeze" class="flex"> --}}
+                {{--                         <div class="relative shrink-0 w-12 h-12 bg-breeze flex items-center justify-center rounded-lg overflow-hidden"> --}}
+                {{--                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span> --}}
+                {{--                             <img src="/img/ecosystem/breeze.min.svg" alt="Icon" class="w-7 h-7" width="47" height="32"> --}}
+                {{--                         </div> --}}
+                {{--                         <div class="ml-4 leading-5"> --}}
+                {{--                             <div class="text-gray-900">Item 2</div> --}}
+                {{--                             <span class="text-gray-700 text-xs">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </span> --}}
+                {{--                         </div> --}}
+                {{--                     </a> --}}
+                {{--                 </li> --}}
+                {{--                 <li> --}}
+                {{--                     <a href="/docs/{{DEFAULT_VERSION}}/starter-kits#laravel-breeze" class="flex"> --}}
+                {{--                         <div class="relative shrink-0 w-12 h-12 bg-breeze flex items-center justify-center rounded-lg overflow-hidden"> --}}
+                {{--                             <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span> --}}
+                {{--                             <img src="/img/ecosystem/breeze.min.svg" alt="Icon" class="w-7 h-7" width="47" height="32"> --}}
+                {{--                         </div> --}}
+                {{--                         <div class="ml-4 leading-5"> --}}
+                {{--                             <div class="text-gray-900">Item 3</div> --}}
+                {{--                             <span class="text-gray-700 text-xs">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </span> --}}
+                {{--                         </div> --}}
+                {{--                     </a> --}}
+                {{--                 </li> --}}
+                {{--             </ul> --}}
+                {{--         </div> --}}
+                {{--     </div> --}}
+                {{-- </li> --}}
             </ul>
             <div class="flex-1 flex items-center justify-end">
-                <button id="docsearch"></button>
+                {{-- <button id="docsearch"></button> --}}
                 <x-button.secondary href="/docs" class="hidden lg:ml-4 lg:inline-flex">Material de estudo</x-button.secondary>
                 <button
                     class="ml-2 relative w-10 h-10 inline-flex items-center justify-center p-2 text-gray-700 lg:hidden"
