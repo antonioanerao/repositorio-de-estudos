@@ -18,8 +18,8 @@ services:
     networks:
       - proxy
 
-  app-name:
-    container_name: app-name
+  app-estudos:
+    container_name: app-estudos
     image: antonioanerao/laravel:latest
     restart: always
     networks:
@@ -29,8 +29,8 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=proxy"
-      - "traefik.http.routers.app-name.rule=Host(`app.docker.localhost`)"
-      - "traefik.http.routers.app-name.entrypoints=web"
+      - "traefik.http.routers.app-estudos.rule=Host(`estudos.docker.localhost`)"
+      - "traefik.http.routers.app-estudos.entrypoints=web"
 
 networks:
   proxy:

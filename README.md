@@ -1,4 +1,4 @@
-### Aplicação para estudo do conteúdo do concurso do MPAC
+### Aplicação para salvar anotações de estudos
 
 ![Screenshot](screenshot.png)
 
@@ -40,7 +40,7 @@
 ### Rodando a aplicação
 
 #### Acesse a pasta do projeto
-    $ cd estudo-concurso-mpac
+    $ cd repositorio-de-estudos
 
 #### Crie uma nova rede do docker chamada proxy
     $ docker network create proxy

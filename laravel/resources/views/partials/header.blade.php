@@ -10,7 +10,9 @@
         <div class="max-w-screen-xl mx-auto px-5 flex items-center justify-between">
             <div class="flex-1">
                 <a href="/" class="inline-flex items-center">
-                    <h5 class="font-bold">Estudo Concurso <span class="text-red-500">MPAC</span></h5>
+                    <h5 class="font-bold">
+                        {{ config('app.name') }}
+                    </h5>
                 </a>
             </div>
             <ul class="relative hidden lg:flex lg:items-center lg:justify-center lg:gap-6 xl:gap-10">
