@@ -17,3 +17,5 @@
     - [Geometria Espacial](/docs/{{version}}/16-geometria-espacial)
 
 - ## Lingua Portuguesa
+
+  - [Tipos e Gêneros Textuais](/docs/{{version}}/lp-01-tipos-e-generos-textuais)

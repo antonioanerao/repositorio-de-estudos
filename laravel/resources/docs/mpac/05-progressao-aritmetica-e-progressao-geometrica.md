@@ -1,7 +1,9 @@
-### Progressão aritmética e progressão geométrica
+# Progressão aritmética e progressão geométrica
 
-#### Razão
+- [Razão](#razao)
+- [Termo geral](#termo-geral)
+- [Soma dos termos](#soma-dos-termos)
 
-#### Termo geral 
+<a name="soma-dos-termos"></a>
+## Soma dos termos
 
-#### Soma dos termos

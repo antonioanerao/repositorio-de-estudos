@@ -1,42 +1,47 @@
 # Números complexos
 
 - [Conceito](#conceito)
-- [Operações e representação geométrica](#operacoes-e-representacao-geometrica)
+  - [Operações](#operacoes-e-representacao-geometrica)
 
 <a name="conceito"></a>
-### Conceito
+## Conceito
 
-Os números complexos são formados por um número real e um número imaginário. O número real é representado pela letra a e o número imaginário é representado pela letra b. Os números complexos são representados pela letra C e incluem os números reais e irracionais.
-
-Os números complexos são representados da seguinte forma: z = a + bi, onde:
+Os números complexos são uma extensão dos números reais que incluem a unidade imaginária \(i\), definida como \(\sqrt{-1}\). Um número complexo tem a forma \(a + bi\), onde \(a\) e \(b\) são números reais.
 
 > **Note**
->  z é o número complexo; <br>
->  a é o número real; <br>
->  b é o número imaginário; <br>
->  i é a unidade imaginária, que é igual a √-1;
+> Números complexos podem ser representados como pontos no plano cartesiano, com a parte real como o eixo x e a parte imaginária como o eixo y.
+
+> **Note**
+> O conjunto dos números complexos é denotado por **C**.
+
+> **Note**
+> Os números complexos são uma extensão dos números reais que incluem a unidade imaginária \(i\), definida como \(\sqrt{-1}\). Um número complexo tem a forma \(a + bi\), onde \(a\) e \(b\) são números reais.
+
+> **Note**
+> O conjunto dos números complexos é denotado por **C**.
+
+> **Note**
+> Números complexos podem ser representados como pontos no plano cartesiano, com a parte real como o eixo x e a parte imaginária como o eixo y.
 
 <a name="operacoes-e-representacao-geometrica"></a>
 ### Operações e representação geométrica
 
-As operações com números complexos são realizadas da mesma forma que as operações com números reais. 
+Os números complexos podem ser representados como pontos no plano cartesiano, com a parte real como o eixo x e a parte imaginária como o eixo y.
 
-A representação geométrica de um número complexo é feita no plano cartesiano. O eixo horizontal é o eixo real e o eixo vertical é o eixo imaginário. O ponto de intersecção dos eixos é o ponto de origem. 
+![Números complexos](../images/complex-plane.png)
 
-Os números complexos são representados por pontos no plano cartesiano. A parte real é o ponto no eixo horizontal e a parte imaginária é o ponto no eixo vertical. 
+Os números complexos são escritos na forma \(a + bi\), onde \(a\) é a parte real e \(b\) é a parte imaginária.
 
-Para representar um número complexo no plano cartesiano, devemos seguir as seguintes regras:
-
-- Se o número complexo for positivo, o ponto será representado no primeiro quadrante.
-- Se o número complexo for negativo, o ponto será representado no terceiro quadrante.
-- Se o número complexo for zero, o ponto será representado no ponto de origem.
-- Se o número complexo for imaginário, o ponto será representado no eixo vertical.
-- Se o número complexo for real, o ponto será representado no eixo horizontal.
-
-A distância do ponto de origem até o ponto que representa o número complexo é chamada de módulo do número complexo. O módulo de um número complexo é representado por |z| e é calculado da seguinte forma: 
+A parte imaginária de um número complexo é representada como \(bi\), onde \(b\) é um número real e \(i\) é a unidade imaginária.
 
 > **Note**
-> |z| = √(a² + b²)
+> A parte real de um número complexo é o número real que aparece antes de \(i\).
 
+> **Note**
+> A parte imaginária de um número complexo é o número real que aparece antes de \(i\).
 
-O ângulo formado entre o eixo real e o segmento de reta que une o ponto de origem ao ponto que representa o número complexo
+> **Note**
+> A parte real de um número complexo é o número real que aparece antes de \(i\).
+
+> **Note**
+> A parte imaginária de um número complexo é o número real que aparece antes de \(i\
