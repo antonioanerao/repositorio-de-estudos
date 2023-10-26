@@ -19,3 +19,4 @@
 - ## Lingua Portuguesa
 
   - [Tipos e Gêneros Textuais](/docs/{{version}}/lp-01-tipos-e-generos-textuais)
+  - [Compreenção/Interpretação de texto](/docs/{{version}}/lp-02-interpretacao-de-texto)
