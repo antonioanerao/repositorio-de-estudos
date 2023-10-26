@@ -3,6 +3,10 @@
 - [Interpretação de texto](#interpretacao-de-texto)
 - [Compreensão de texto](#compreensao-de-texto)
 
+> **Note**
+> [Ver no YouTube](https://www.youtube.com/watch?v=XsN0e_xPyNI) <br>
+> https://www.youtube.com/watch?v=XsN0e_xPyNI
+
 <a name="interpretacao-de-texto"></a>
 ## Interpretação de texto
 
