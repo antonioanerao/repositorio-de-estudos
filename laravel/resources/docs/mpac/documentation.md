@@ -22,6 +22,7 @@
 - ## Lingua Portuguesa
   - [Tipos e Gêneros Textuais](/docs/{{version}}/lp-01-tipos-e-generos-textuais)
   - [Compreenção/Interpretação de texto](/docs/{{version}}/lp-02-interpretacao-de-texto)
+  - [Variação linguística](/docs/{{version}}/lp-03-variacao-linguistica)
 
 - ## Informática
   - [Família de Sistemas Operacionais Microsoft Windows para Microcomputadores Pessoais](/docs/{{version}}/familia-windows)
