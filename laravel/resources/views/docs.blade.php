@@ -7,7 +7,7 @@
 
     <div class="relative overflow-auto dark:bg-dark-700" id="docsScreen">
         <div class="relative lg:flex lg:items-start">
-            <aside class="hidden fixed top-0 bottom-0 left-0 z-20 h-full w-16 bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:w-80 lg:shrink-0 lg:flex lg:flex-col lg:justify-end lg:items-end  dark:from-dark-800 dark:to-dark-700">
+            <aside class="hidden fixed top-0 bottom-0 left-0 z-20 h-full w-16 bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:w-80 lg:shrink-0 lg:flex lg:flex-col   dark:from-dark-800 dark:to-dark-700">
                 <div class="relative min-h-0 flex-1 flex flex-col xl:w-80">
                     <a href="/" class="flex items-center py-8 -mb-8 lg:px-8 xl:px-8">
                         <h1 class=" text-lg font-bold dark:text-white">
@@ -20,7 +20,6 @@
                                 {!! $index !!}
                             </div>
                         </nav>
-
                     </div>
                 </div>
             </aside>
