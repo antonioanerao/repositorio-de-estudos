@@ -5,6 +5,11 @@
 
 ![Screenshot](screenshot.png)
 
+### Variáveis a serem trocadas no .env
+- **APP_INITIAL_PROJECT** é o projeto padrão. Cada projeto é uma pasta dentro de /laravel/resources/docs
+- **APP_INITIAL_DOC_PAGE** é a página padrão do seu projeto padrão que será carregada
+- **APP_SSL** indica se as URLS do seu site carregarão como http (false) ou https (true)
+
 ### Informações do Sistema
 
 #### Versão da imagem do Nginx
