@@ -10,6 +10,8 @@
 - **APP_INITIAL_DOC_PAGE** é a página padrão do seu projeto padrão que será carregada
 - **APP_SSL** indica se as URLS do seu site carregarão como http (false) ou https (true)
 
+Versão online das anotações disponível em [https://estudos.anerao.dev/docs/mpac/00-edital](https://estudos.anerao.dev/docs/mpac/00-edital)
+
 ### Informações do Sistema
 
 #### Versão da imagem do Nginx
