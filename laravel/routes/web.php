@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DocsController;
 
 if (! defined('DEFAULT_VERSION')) {
-    define('DEFAULT_VERSION', 'mpac');
+    define('DEFAULT_VERSION', config('app.initial_project'));
 }
 
 Route::get('docs', [DocsController::class, 'showRootPage']);

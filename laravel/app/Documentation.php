@@ -167,7 +167,7 @@ class Documentation
     public static function getDocVersions()
     {
         return [
-            'mpac' => 'mpac',
+            config('app.initial_project') => config('app.initial_project'),
         ];
     }
 }

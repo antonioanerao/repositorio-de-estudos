@@ -15,6 +15,7 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
     'initial_doc_page' => env('APP_INITIAL_DOC_PAGE', 'instalation'),
+    'initial_project' => env('APP_INITIAL_PROJECT'),
     'ssl' => env('APP_SSL', false),
 
     /*
