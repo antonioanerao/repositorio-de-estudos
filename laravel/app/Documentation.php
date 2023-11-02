@@ -166,8 +166,12 @@ class Documentation
      */
     public static function getDocVersions()
     {
-        return [
-            config('app.initial_project') => config('app.initial_project'),
-        ];
+        foreach (glob('../resources/docs' . '/*' , GLOB_ONLYDIR)  as $key => $value) {
+            $dir[$key] = substr($value, strrpos($value, '/') + 1);
+            return [
+                config('app.initial_project') => config('app.initial_project'),
+                $dir[$key] => $dir[$key],
+            ];
+        }
     }
 }

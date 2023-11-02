@@ -119,7 +119,9 @@
                                         @change="window.location = $event.target.value"
                                     >
                                         @foreach ($versions as $key => $display)
-                                            <option {{ $currentVersion == $key ? 'selected' : '' }} value="{{ url('docs/'.$key.$currentSection) }}">{{ $display }}</option>
+                                            <option {{ $currentVersion == $key ? 'selected' : '' }} value="{{ url('docs/'.$key.'/'.config('app.initial_doc_page')) }}">
+                                                {{ $display }}
+                                            </option>
                                         @endforeach
                                     </select>
                                     <img class="absolute inset-y-0 right-0 mt-2.5 w-2.5 h-2.5 text-gray-900 pointer-events-none dark:hidden" src="/img/icons/drop_arrow.min.svg" alt="">
